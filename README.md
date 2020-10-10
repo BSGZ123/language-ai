@@ -1,4 +1,4 @@
-# language-ai
+# language-ai 感谢项目所有者chenxin 来自BsKPLu
 文章AI伪原创,文章自动生成,NLP,自然语言技术处理,DNN语言模型,词义相似度分析。全网首个AI伪原创开源应用类项目。
 点击右侧about内的链接极速体验!
 ## 快速开始
@@ -78,7 +78,7 @@ baidu:
 language-ai
     |- src/main
     |       |- java java源码所在目录
-    |           |- com.chenxin
+    |           |- com.bskplu
     |                   |- auth 百度AI授权认证模块
     |                   |- base 基础公共抽象模块
     |                   |- config 项目所有自定义配置模块
@@ -97,7 +97,7 @@ language-ai
     |           |- AiApplication.java 主启动类
     |
     |- src/test/java
-        |- com.chenxin 相关测试代码, 经验证, 若idea版本太低将会导致该单元测试无法使用
+        |- com.bskplu 相关测试代码, 经验证, 若idea版本太低将会导致该单元测试无法使用
   
             
 其他自行查看源码, 不一一概述
@@ -168,6 +168,10 @@ HanLP是一系列模型与算法组成的NLP工具包，目标是普及自然语
 
 > - Q: 直接粘贴文章进行AI伪原创可能会报json注入异常
 > - A: 建议去掉空格, 回车等。或者换成转义字符。
+
+## 关于作者
+热衷于ai，分布式微服务，web应用，大数据等领域。工作室：1024代码工作室，有需求的可以联系作者哦，交流也是可以滴。
+邮箱：amazingjava@163.com
 
 ## 其他
 为什么会使用多个NLP项目, 原因是因为最初是想使用百度AI将整个项目完成。 但由于百度自然语言处理API
