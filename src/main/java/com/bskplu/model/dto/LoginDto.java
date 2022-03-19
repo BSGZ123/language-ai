@@ -6,7 +6,6 @@ import lombok.Data;
 
 /**
  * 登录DTO
- * Created by 尘心 on 2020/9/20 0020.
  */
 @Data
 @ApiModel("登录DTO")

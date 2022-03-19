@@ -24,6 +24,3 @@ spring:
 
 
 baidu:
-  appid: your appid
-  appkey: your appkey
-  secret: your secret

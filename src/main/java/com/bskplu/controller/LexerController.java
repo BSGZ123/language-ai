@@ -84,9 +84,7 @@ public class LexerController extends BaseController{
     public R articleReplace(@RequestBody ReqBody<TextDto> para) {
         try {
             return R.success(lexerService.replaceParagraph(para.getParams(),getAccessToken()));
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
         }
 

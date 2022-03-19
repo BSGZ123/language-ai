@@ -31,6 +31,7 @@ public class CommandService {
         }
         // 初始化redis, 先清空所有键值
         Set<String> keys = redisTemplate.keys("*");
+        assert keys != null;
         if (keys.size()!=0) {
             // 清空
             redisTemplate.delete(keys);
@@ -43,7 +44,7 @@ public class CommandService {
             String value = EncodeUtil.changeCharset(map.getVal(),"UTF-8");
 
             // 去除重复键值, 以免发生异常
-            if (!redisTemplate.hasKey(key)) {
+            if (Boolean.FALSE.equals(redisTemplate.hasKey(key))) {
                 redisTemplate.opsForValue().append(key,value);
             }else {
                 // 相同键值添加后缀
